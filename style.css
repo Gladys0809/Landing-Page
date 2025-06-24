@@ -1,0 +1,47 @@
+/* Active Nav */
+.menu__link.active {
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Active Section */
+.your-active-class {
+  background-color: #f9f9f9;
+  border-left: 4px solid #007bff;
+}
+
+/* Collapsible button */
+.collapse-btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  display: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollToTop:hover {
+  background-color: #555;
+}
+
+/* Hide nav transition */
+nav {
+  transition: opacity 0.5s ease;
+}
