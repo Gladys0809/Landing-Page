@@ -1,1 +1,1 @@
-bash remove file
+git commit -m "Remove file or folder"
