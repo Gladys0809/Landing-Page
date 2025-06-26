@@ -1,1 +1,1 @@
-git rm js
+bash remove file
