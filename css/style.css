@@ -1,1 +1,3 @@
-/*Styles go here*/
+@import "menu.css"; 
+@import "body.css"; 
+@import "container.css";
