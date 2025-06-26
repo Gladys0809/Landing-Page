@@ -1,0 +1,31 @@
+.menu-title {
+    font-weight: 700; 
+    font-size: 1.8rem; 
+    margin: 0; 
+}
+
+.menu-header {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0; 
+    display: flex;
+    background-color: lavenderblush; 
+    justify-content: center; 
+    position: relative; 
+    text-align: center;
+}
+
+.menu-header .subscribe {
+    position: absolute; 
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color:#1b1d80;
+    font-size: 0.9rem; 
+}
+.menu-header .search {
+    position: absolute;
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%);
+    font-size: 1.2rem;  
+}
