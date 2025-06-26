@@ -1,1 +1,1 @@
-/*js files go here*/
+git rm js
