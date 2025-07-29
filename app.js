@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let scrollTimer = null;
 
-  // --- Build Dynamic Nav ---
   sections.forEach(section => {
     const li = document.createElement('li');
     const a = document.createElement('a');
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navList.appendChild(li);
   });
 
-  // --- Add Collapsible Button to Sections ---
   sections.forEach(section => {
     const toggleBtn = document.createElement('button');
     toggleBtn.textContent = 'Toggle Content';
@@ -45,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
     section.insertBefore(toggleBtn, content);
   });
 
-  // --- Set Active Section and Nav on Scroll ---
   const setActiveSection = () => {
     sections.forEach(section => {
       const rect = section.getBoundingClientRect();
@@ -61,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // --- Hide Navbar on Inactivity ---
   const hideNavbarOnIdle = () => {
     header.style.display = 'block'; // Always show on scroll
     clearTimeout(scrollTimer);
@@ -70,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
   };
 
-  // --- Show Scroll to Top Button ---
+  
   const toggleScrollTopButton = () => {
     if (window.scrollY > window.innerHeight) {
       scrollTopBtn.style.display = 'block';
@@ -83,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // --- Scroll Listener ---
   window.addEventListener('scroll', () => {
     setActiveSection();
     hideNavbarOnIdle();
