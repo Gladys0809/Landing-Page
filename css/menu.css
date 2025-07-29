@@ -13,19 +13,3 @@
     position: relative; 
     text-align: center;
 }
-
-.menu-header .subscribe {
-    position: absolute; 
-    left: 0; 
-    top: 50%;
-    transform: translateY(-50%); 
-    color:#1b1d80;
-    font-size: 0.9rem; 
-}
-.menu-header .search {
-    position: absolute;
-    right: 0; 
-    top: 50%; 
-    transform: translateY(-50%);
-    font-size: 1.2rem;  
-}
